@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情页</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/list01.css">
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/ajax.js"></script>
+	<script type="text/javascript" src="../shopingcar.js"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+		
+		//我的美购下拉菜单
+		$(".one").on("mouseover",function(){
+			$("#header_list").css("display","block")
+		});
+
+		$(".one").on("mouseout",function(){
+			$("#header_list").css("display","none")
+		});
+
+		//fixed
+
+		$("#right_but").on("click",function(){
+			$("#right2").css("display","none")
+		})
+//json 数据
+
+		ajax("get","../index.json","",function(data){
+//这里开始为nav的json下拉菜单
+			var arr = JSON.parse(data)._listData01;
+			var div1 = $("<div></div>")
+			for(var i = 0; i < arr.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr[i].title);
+				div1.append(sa);
+				$("#main").append(div1);
+			};
+
+			var arr2 = JSON.parse(data)._listData02;
+			var div2 = $("<div></div>")
+			for(var i = 0; i < arr2.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr2[i].title);
+				div2.append(sa);
+				$("#main").append(div2);
+			};
+		
+			var arr3 = JSON.parse(data)._listData03;
+			var div3 = $("<div></div>")
+			for(var i = 0; i < arr3.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr3[i].title);
+				div3.append(sa);
+				$("#main").append(div3);
+			};
+
+			var arr4 = JSON.parse(data)._listData04;
+			var div4 = $("<div></div>")
+			for(var i = 0; i < arr4.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr4[i].title);
+				div4.append(sa);
+				$("#main").append(div4);
+			};
+
+			var arr5 = JSON.parse(data)._listData05;
+			var div5 = $("<div></div>")
+			for(var i = 0; i < arr5.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr5[i].title);
+				div5.append(sa);
+				$("#main").append(div5);
+			};
+
+			var arr6 = JSON.parse(data)._listData06;
+			var div6 = $("<div></div>")
+			for(var i = 0; i < arr6.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr6[i].title);
+				div6.append(sa);
+				$("#main").append(div6);
+			};
+
+
+			var arr7 = JSON.parse(data)._listData07;
+			var div7 = $("<div></div>")
+			for(var i = 0; i < arr7.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr7[i].title);
+				div7.append(sa);
+				$("#main").append(div7);
+			};
+
+
+			var arr8 = JSON.parse(data)._listData08;
+			var div8 = $("<div></div>")
+			for(var i = 0; i < arr8.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr8[i].title);
+				div8.append(sa);
+				$("#main").append(div8);
+			};
+
+			var arr9 = JSON.parse(data)._listData09;
+			var div9 = $("<div></div>")
+			for(var i = 0; i < arr9.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr9[i].title);
+				div9.append(sa);
+				$("#main").append(div9);
+			};
+
+			var arr10 = JSON.parse(data)._listData10;
+			var div10 = $("<div></div>")
+			for(var i = 0; i < arr10.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr10[i].title);
+				div10.append(sa);
+				$("#main").append(div10);
+			};
+
+			var arr11 = JSON.parse(data)._listData11;
+			var div11 = $("<div></div>")
+			for(var i = 0; i < arr11.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr11[i].title);
+				div11.append(sa);
+				$("#main").append(div11);
+			};
+
+			var arr12 = JSON.parse(data)._listData12;
+			var div12 = $("<div></div>")
+			for(var i = 0; i < arr12.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr12[i].title);
+				div12.append(sa);
+				$("#main").append(div12);
+			};
+
+			var arr13 = JSON.parse(data)._listData13;
+			var div13 = $("<div></div>")
+			for(var i = 0; i < arr13.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr13[i].title);
+				div13.append(sa);
+				$("#main").append(div13);
+			};
+			var arr14 = JSON.parse(data).right_images;
+			for(var i = 0; i < arr14.length; i++){
+				var rightImg = $('<img src=""/>');
+				rightImg.attr("src","../" +arr14[i].imgUrl);
+				$("#right").append(rightImg);
+			}
+			var arr15 = JSON.parse(data).right_images2;
+			for(var i = 0; i < arr15.length; i++){
+				var rightImg = $('<img src=""/>');
+				rightImg.attr("src","../" + arr15[i].imgUrl);
+				$("#right").append(rightImg);
+			}
+
+			})
+//购物车
+		$("#shopping_cart").on("mouseover",function(){
+			$("#shopping").css("display","block")
+		});
+
+		$("#shopping_cart").on("mouseout",function(){
+			$("#shopping").css("display","none")
+		});
+//所有商品下拉菜单
+		$("#allshop").on("mouseover",function(){
+			$("#big_list").css("display","block")
+		});
+		$("#allshop").on("mouseout",function(){
+			$("#big_list").css("display","none")
+		});
+//阻止我的美购，a标签的默认跳转
+	    $("#this_onea").on("click",function(){
+	    	return false;
+	    });
+
+	    //尺码
+		var shop_id_dd = $("#shop_id_dl").find("dd");
+		shop_id_dd.on("click",function(){
+			shop_id_dd.attr("id","");
+			$(this).attr("id","active1");
+		});
+		//模特转换
+		$("#main_ul_1").on("click",function(){
+			$("#p_left_img").attr("src","../images/list1/0.jpg");
+			$("#list_main_ul").find("li").find("img").attr("class","border2");
+			$("#main_ul_1").attr("class","active2")
+		});
+		$("#main_ul_2").on("click",function(){
+			$("#p_left_img").attr("src","../images/list1/1.jpg");
+			$("#list_main_ul").find("li").find("img").attr("class","border2");
+			$("#main_ul_2").attr("class","active2")
+		});
+		$("#main_ul_3").on("click",function(){
+			$("#p_left_img").attr("src","../images/list1/2.jpg");
+			$("#list_main_ul").find("li").find("img").attr("class","border2");
+			$("#main_ul_3").attr("class","active2")
+		});
+		$("#main_ul_4").on("click",function(){
+			$("#p_left_img").attr("src","../images/list1/3.jpg");
+			$("#list_main_ul").find("li").find("img").attr("class","border2");
+			$("#main_ul_4").attr("class","active2")
+		});
+	})
+
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="wrap">
+			<img id = "top_img" src="../images/index_03.jpg">
+			<p class="header_font">您好，欢迎光临美国购物网！</p>
+			<div class="main"><a href="denglu.html">请登录</a> | <a href = "denglu.html">快速注册</a> | </div>
+			<ul class="right">
+				<li class="one">
+				<div id="hearder_a">
+					<a id="this_onea" href="#">我的美购</a>
+				</div>
+				<div id="header_list">
+					<ul class="header_list01">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的代购单</a></li>
+						<li><a href="#">我的收藏夹</a></li>
+						<li><a href="#">我的代购卷</a></li>
+						<li><a href="#">我的积分</a></li>
+					</ul>
+				</div>
+				</li>
+				
+				<li class="two"><a href="#"><img src="../images/index_07.jpg"/></a>
+				</li>
+				<li class="three"><a href="#">帮助中心</a></li>
+				<li class="four"><a href="#">English</a></li>
+				<li class="five"><a href="#">收藏本站</a></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div id="toper">
+		<div class="wrap">
+			<img id="toper_image01" src="../images/index_r6_c42.jpg"/>
+			<div id="toper_search">
+				<div id="seach">
+					<form action="../php/wpa.php" method="get" name="seach_form">
+						<input  type="text" placeholder="请输入品牌或者商品名称">
+						<button>搜索</button>
+					</form>
+				</div>
+
+				<ul id="hot">
+					<li id="hot_00">热门搜索:</li>
+					<li><a href="#" id="hot_01">百傲钙</a></li>
+					<li><a href="#" id="hot_02">Coach新款</a></li>
+					<li><a href="#">CK</a></li>
+					<li><a href="#">CNG</a></li>
+					<li><a href="#">拉夫劳伦</a></li>
+					<li><a href="#">Michael Kors</a></li>
+				</ul>
+			</div>
+
+			<div id="shopping_cart">
+				<span id="shopping_span">
+					<font id="font_numbero">0</font>
+				</span>
+				<div id="shopping">
+					<p id='shoppingcar_P'>您还没有购买物品，快去挑选吧</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav">
+		<div class="wrap">
+			<div id="nav_list">
+				<div id="allshop">全部商品分类
+				<div id="big_list">
+					<div id="left">
+						<ul id="left_list">
+							<li><a href = "#">服饰</a></li>
+							<li><a href = "#">鞋靴</a></li>
+							<li><a href = "#">箱包</a></li>
+							<li><a href = "#">配饰</a></li>
+							<li><a href = "#">饰品</a></li>
+							<li><a href = "#">手表</a></li>
+							<li><a href = "#">眼镜</a></li>
+							<li><a href = "#">护肤</a></li>
+							<li><a href = "#">香水</a></li>
+							<li><a href = "#">彩妆</a></li>
+							<li><a href = "#">男士护理</a></li>
+							<li><a href = "#">营养保健</a></li>
+							<li><a href = "#">呼吸机及配件</a></li>
+						</ul>
+					</div>
+					<div id="main"></div>
+					<div id="right"></div>
+				</div>
+			</div>
+			</div>
+			<ul id="nav_table">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="list2.html">服装鞋类</a></li>
+				<li><a href="#">箱包配饰</a></li>
+				<li><a href="#">营养保健</a></li>
+				<li><a href="#">三天到货</a></li>
+				<li id="splice"><a href="#"><img src="../images/index3_r4_c7.jpg"/></a></li>
+			</ul>
+			<img id="nav_right" src="../images/right01.jpg"/>
+		</div>
+	</div>
+	<div id="all_div">
+	<div id="place">
+		当前位置：<a href="#">首页 </a>> > <a href="#">服装鞋类</a> > <a href="#">女装</a> > <a href="#">外套</a> > <a href="#">夹克</a> > <a href="#">薄款夹克</a> > <a href="#">商品详情</a>
+	</div>
+		<div class="conter">
+			<div id="pric1">
+				<div class="pric1_left">
+					<div id="p_left_1">
+						<div id="img">
+							<img id="p_left_img" src="http://i.usashopcn.com/p/16/08/31/61720688-b855-4aa1-bdc8-6b5bda9c42b8-l.jpg"/>
+						</div>
+					</div>
+					<div id="p_list_img">
+						<div id="list_left">
+							<img src="../images/list1/zfxj.png">
+						</div>
+						<div id="list_main">
+							<ul id="list_main_ul">
+							<li>
+								<img id="main_ul_1" class="border2" src="http://i.usashopcn.com/p/16/08/31/61720688-b855-4aa1-bdc8-6b5bda9c42b8-l.jpg"/>
+							</li>
+							<li>
+								<img id="main_ul_2" class="border2" src="http://i.usashopcn.com/p/16/08/31/94bcecb3-9dbf-4da2-8b61-2782aca0c897-l.jpg"/>
+							</li>
+							<li>
+								<img id="main_ul_3" class="border2" src="http://i.usashopcn.com/p/16/08/31/e1083fc4-1a16-4fc5-b427-e73fe16c2ddd-l.jpg"/>
+							</li>
+							<li>
+								<img id="main_ul_4" class="border2" src="http://i.usashopcn.com/p/16/08/31/8389d498-2ec3-40b8-ba3b-cdaef0421f9a-l.jpg">								
+							</li>
+							</ul>
+						</div>
+						<div id="list_right">
+							<img src="../images/list1/yfxj.png">
+						</div>
+					</div>
+				</div>
+				<div class="pric1_main">
+					<p class="pric1_main_p">
+						正品代购 ASOS女士时尚印花装饰短款夹克 美国直邮
+					</p>
+					
+					<span class="pric1_main_span">品牌： <a href="#">Asos</a></span>
+					
+					<div class="pric1_main_2span">
+						<span class="pric1_main_span2">代购价: ￥<font color="red">1100.00</font></span>
+						<span class="pric1_main_span3">市场价: ￥<S>2000.00</S></span>
+					</div>
+
+					<div class="shop_id">
+						<dl id="shop_id_dl">
+						<dt>尺码</dt>
+						<dd class ="border1"><a>2</a></dd>
+						<dd class ="border1"><a>4</a></dd>
+						<dd class ="border1"><a>6</a></dd>
+						<dd class ="border1"><a>8</a></dd>
+						<dd class ="border1"><a>10</a></dd>
+						<dd class ="border1"><a>12</a></dd>
+						</dl>
+					<div class="go">运费: 卖家支付运费 &ensp;&ensp;&ensp;&ensp;已售出： 17件</div>
+					<div class="buy">配送方式: &nbsp;<img src="../images/list1/meigou_r8_c2.jpg"/> 美国直邮 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 支付方式：<img src="../images/list1/meigou_r12_c3.jpg"/>&nbsp; 网银</div>
+					<div class="timer">物流时效： &nbsp;7-10个工作日到货</div>
+					<div class="number">我要买 <input id="numbertyui" type="text"/> 件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编号：128784</div>
+					</div>
+					<div id="buy_but">
+						<button id="buy_shopping">加入购物车</button>
+						<button id="copy_shopping">立即购买</button>
+						<span>商品价格，库存请以美国网站为准，购买前请咨询客服。</span>
+					</div>
+				</div>
+				<div class="pric1_right"><img src="../images/baozheng.jpg"></div>
+			</div>
+			<img src="../images/list1/list_big.jpg">
+		</div>
+		<div id="right2"><img  src="../images/right.jpg"/><button id="right_but">×</button></div>
+	</div>
+		<div id="list_nav">
+		<div class="wrap">
+			<div id="nav_01"></div>
+			<div id="nav_02">
+				<span class="nav2">帮助中心</span>
+				<span class="nav2">支付方式</span>
+				<span class="nav2">会员机制</span>
+				<span class="nav2">网站地图</span>
+				<span class="nav2">关于我们</span>
+				<span class="nav2">服务中心</span>
+				<span class="nav2">关注我们</span>
+			</div>
+			<div id="nav_03">
+				<ul class="nav3">
+				<li><a href="#">代购流程</a></li>
+				<li><a href="#">配送方式</a></li>
+				<li><a href="#">代金券使用</a></li>
+				<li><a href="#">常见问题</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">支付宝</a></li>
+				<li><a href="#">财付通</a></li>
+				<li><a href="#">银行转账</a></li>
+				<li><a href="#">网银在线</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">会员机制</a></li>
+				<li><a href="#">会员奖励</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">折扣播报</a></li>
+				<li><a href="#">潮流资讯</a></li>
+				<li><a href="#">品牌专区</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">隐私声明</a></li>
+				<li><a href="#">企业文化</a></li>
+				</ul>
+				<div id="nav_right1"></div>
+			</div>
+			<div id="nav_04"></div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="wrap">
+			<img src="../images/pai.jpg"/>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#place{width: 980px;height: 25px;line-height: 25px;margin:0 290px;overflow: hidden;font-size: 12px;color: #999999}
+.conter{width: 980px;margin: 0 auto}
+#all_div{width: 100%;height: 5140px;}
+#pric1{width: 978px;margin-bottom: 8px;float: left;height: auto;background:url(http://www.usashopcn.com/Content/images/gradient_gray_bg.jpg) repeat-x left top;border:1px solid #D5D5D5;}
+
+/*.pric1_left*/
+.pric1_left{width: 365px;margin-top: 6px;padding-top: 10px;float: left;display: block;}
+#p_left_1{margin: 8px 0px 5px 8px;float: left;;position: relative;}
+#img{position: relative;padding: 0;border:1px solid #EAEAEA;text-align: center;width: 330px;float: left;}
+#p_left_img{width: 330px;height: 330px;float: left;cursor: pointer;}
+#p_list_img{width:350px;height: 85px;padding-top: 6px;overflow: hidden;}
+#list_left{width: 10px;height: 68px;float: left;;margin-top: 5px;background: url(http://www.usashopcn.com/Content/Images/TGray.png) no-repeat center center;}
+#list_left img{margin-top: 30px;margin-left: 3px;}
+#list_main{width: 325px;height: 82px;float: left;overflow: hidden;margin: 0 2px;display: inline;}
+#list_main_ul{width: 324px;overflow: hidden;}
+#list_main_ul li{float: left;}
+#list_main_ul li img{padding: 3px 2px;display: inline;height: 68px;margin: 0 4px 0 3px;cursor: pointer;background: none repeat scroll 0 0 #FFFFFF;}
+#list_right{background: url(http://www.usashopcn.com/Content/Images/BGray.png) no-repeat center center;width: 10px;height: 68px;float: left;;margin-top: 5px;}
+#list_right img{margin-top: 30px;margin-left: 3px;}
+.border2{border: 1px solid #999;}
+.active2{border: 1px solid red;}
+
+/*pric1_main*/
+.pric1_main{width: 360px;height: auto;float: left;text-align: left;margin-left: 10px;margin-top: 20px;}
+.pric1_main_p{font-size: 16px;color: #333;padding: 15px 15px 0 0;font-weight: bold;}
+.pric1_main_span{display: block;width: 360px;height: 30px;font:12px/30px "";color: #9E9E9E}
+.pric1_main_2span{width: 360px;height: 33px;border-bottom: #EAEAEA 1px dashed;margin: 0 0 19px 0;float: left;}
+.pric1_main_span2{width: 130px;float: left;display: block;float: left;line-height: 33px;font-size: 12px;margin-bottom: 5px;font-family: "微软雅黑"}
+.pric1_main_span3{width: 130px;float: left;display: block;float: left;line-height: 33px;font-size: 12px;margin-bottom: 5px;font-family: "微软雅黑"}
+.shop_id{width: 350px;border-bottom: 1px dashed #EAEAEA;float: left;margin: 0 0 19px 0;}
+#shop_id_dl{width: 100%;height: 32px;margin-bottom: 6px;}
+#shop_id_dl dt{float: left;width: 62px;margin-top: 3px;height: 22px;line-height: 22px;font-size: 12px;color: gray}
+#shop_id_dl dd{float: left;width: 26px;height: 28px;line-height: 28px;margin: 0 4px 0 4px;padding: 0;}
+#shop_id_dl dd a{font-size: 12px;text-align:center;color: block;width: 26px;height: 28px;text-align: center;display: block;cursor: pointer; }
+#active1{border: 1px solid red;}
+.border1{border:1px solid #C8C9CD;}
+.go{font-size: 12px;width: 360px;height: 30px;color: gray;float: left;}
+.buy{font-size: 12px;width: 360px;height: 30px;float: left;line-height: 30px;color: gray;padding: 0}
+.buy img{padding: 0;line-height: 30px;margin:-3px auto;}
+.timer{width: 360px;height: 30px;float: left;font-size: 12px;line-height: 30px;color: gray;}
+.number{width: 360px; height: 30px;float:left;font-size: 12px;color: gray;line-height: 30px;}
+.number input{width: 52px;height: 18px;border:1px solid #cccccc;line-height: 21px;padding: 0;}
+#buy_but{width: 100%;height: 40px;float: left;}
+#buy_shopping{border: 0;width: 107px;height: 32px;line-height: 32px;text-align: center;font-size: 14px;color: #fff;font-weight: bold;cursor: pointer;background: url(../images/list1/orange_gray_switch_bg.jpg) left top no-repeat}
+#copy_shopping{border: 0;width: 107px;height: 32px;line-height: 32px;text-align: center;font-size: 14px;color: #000;font-weight: bold;cursor: pointer;background: url(../images/list1/orange_gray_switch_bg.jpg) left -37px no-repeat}
+#buy_but span{display:block;width:360px;height:30px;float:left;color: #BE0000;font-size: 12px;margin: 8px 0;}
+.pric1_right{float: left;margin: 10px 5px 8px 20px; }

@@ -1,0 +1,37 @@
+#all_center{width: 1190px;height: 4135px;margin: 0 auto;}
+#xiangqingf_left{width: 184px;float: left;margin-top: 5px;height: 2574px;}
+#xiangqingf_right{width: 984px;height: 4055px;float: left;padding-left: 20px;}
+#xiangqingf_r_top{width: 982px;height: 86px;background: url(../images/list2/neirong_r2_c4.jpg);float: left;border: 1px solid #e3e3e3;margin-top: 5px;padding-bottom: 10px;}
+#top_h2{width:962px;padding: 10px 0 0 20px;color: black;font-weight: bold;font-size: 15px;float: left;padding-right: 20px;}
+#top_h2 span{font-size: 12px;color: gray;font-weight: 100;}
+#top_tul{width: 962px;float: left;padding: 10px 0 0 10px;color: #999;line-height: 22px;height: 44px;}
+#top_tul li{float: left;padding: 0 10px;font-size: 12px;}
+#main_gttitle{margin-top: 10px;width: 984px;height: 20px;border-bottom: 2px solid #ed145b;float: left;}
+#main_gttitle #zlg1{width: 68px;height: 21px;background: #ED145B;color: #fff;margin-right: 20px;font-size: 13px;text-align: center;margin-right: 20px;float: left;}
+#main_gttitle a{padding-left: 10px;background: url(../images/list2/shang_r4_c4.jpg) no-repeat left 4px;float: left;margin: 0 10px;color: #999;font-size: 12px;text-align: center;line-height: 22px;}
+#all_paddyt{width: 984px;float: left;height: 3828px;}
+.gulg{}
+.ggli{width: 235px;height:315px;float: left;padding: 2px 5px;margin-top: 10px;}
+.gga{width: 230px;height: 230px;float: left;border: 1px solid #e3e2e3;}
+.gga img{border: none;width: 230px;height: 230px;float: left;}
+.ggtitle{color: #9E9E9E;display: block;width: 220px;height: 45px;overflow: hidden;line-height: 22px;font-size: 12px;float: left;padding: 2px 6px;}
+.ggpric{float: left;color: #ec147f;padding-right: 5px;font-size:15px;font-weight: bold;padding-top: 5px; }
+.ggs{float: left;color: #6f6f6f;font-size: 12px;padding-top: 5px;}
+.ggbutton{float: left;background: url(../images/anniu.png) no-repeat;color: #FFFFFF;width: 70px;height: 22px;border: none;margin:5px 5px 0px 10px;}
+#kgrv{width: 182px;border: 1px solid #b9b9b9;float: left;margin-bottom: 10px;height: 367px;}
+.kgrb{width: 180px;height: 34px;text-align: center;float: left;color: #fff;background-color: #826BD7;height: 34px;line-height: 34px;border: 1px solid #452A9F;margin: 1px 1px;font-size: 12px;}
+#kgrt{width: 150px;float: left;margin-left: 13px;height: 330px;}
+#kgrt li{font-size:13px;background: url(../images/list2/neirong_r2_c5.jpg) no-repeat left 9px;width: 150px;padding-left: 18px;line-height: 30px;color: #0e8fa2;font-weight: bold;float: left;}
+#kgrh{margin-top: -2px;float: left;width: 130px;background: none}
+#kgrh li{background: url(../images/list2/neirong_r8_c9.jpg) no-repeat left 7px;padding-left: 18px;color: #828181;width: 100px;float: left;line-height: 20px;font-size: 12px;}
+#slet{float: left;border: 1px solid #B9B9B9;width: 182;margin-bottom: 10px;height: 1600px;}
+#slet_tit{width: 182px;height: 35px;float: left;background:url(../images/list2/neiye_r6_c5.jpg);line-height: 35px;border-bottom: 1px solid #cfcfcf;color: #060001;}
+#slet_span{font-size: 14px;color: #060001;padding-left: 18px;margin-left: 10px;background: url(../images/list2/neirong_r11_c4.jpg) no-repeat left center;float: left;}
+#slet_span2{font-size: 12px;color: #999;float: right;font-weight: 100}
+#slet_childUL{width: 182px;height: 1554px;padding-bottom: 10px;}
+#slet_childUL li{width: 170px;margin-top: 7px;float: left;border-bottom: 1px dashed #D2D2D2;padding: 5px 5px;padding-left: 6px;}
+.slet_chlidDiv{height: 168px;width: 168px;float: left;border:1px solid #efefef;}
+.slet_chlidDiv img{width: 168px;height: 168px;}
+.slet_childA{color: #858585;float: left;font-size: 12px;line-height: 20px;padding: 5px 2px;height: 38px;overflow: hidden;}
+.selt_childSPAN{color: rgb(204,0,0);font-weight: bold;;float: left;font-size: 14px;}
+.selt_childS{color: #999;float: left;font-size: 12px;margin-left: 35px;font-weight: bold;}

@@ -1,0 +1,19 @@
+#deng_top{width: 980px;height: 92px;margin: 0 auto;padding: 0}
+#deng_main{margin: 0 auto;height: 550px;width: 755px;border: 1px solid #cccccc;}
+.uilko{float: left;padding: 0 0 0 30px;}
+#D_M_left{width: 412px;float: left;height: 340px;background:url(../images/dl_logo_r4_c8.gif) no-repeat;background-position: right;padding-top: 30px;}
+.D_M_h2{width: 100px;float: left;height: 30px;color: #333;font-family: "微软雅黑";font-size: 21px;}
+.user_lg{width: 320px;float: left;line-height: 30px;padding-left:20px;color: #666;height: 60px;font-size: 12px;font-family: "宋体";}
+.user_lg p{margin-left: 60px;}
+.user_lg input{width: 222px;height: 22px;padding: 0}
+#i_input4{width: 62px;height: 22px;}
+#user_y{background:#999;width: 64px;height: 22px;margin-left: 0;display: inline;border: 1px solid gray;margin: 0 15px;font-size: 18px;}
+#i_input5{margin-left:40px;border: 0;color: #fff;cursor: pointer;font-size: 14px;background: url(../images/ty_r2_c2.gif);height:32px;text-align: center;line-height: 30px;width: 178px;float: left;margin-right: 5px;}
+#user_cl{width: 75px;height: 22px;margin-left: 0;display: inline;}
+#reset_gg{margin-left: 18px;margin-top:2px;border:0;width: 71px;height: 22px;background: url(../images/cz_r2_c2.gif) ;color: #000;font-size: 14px;line-height: 32px;height: 30px;text-align: center;float: left;}
+#D_M_right{float: right;width: 280px;height: 340px;margin-left: 30px;padding-top: 30px;}
+#Dmain_main{padding-left: 30px;width: 702px;height: 139px;float: left;font-size:12px; }
+#notice{height: 100px;overflow-y:auto;position: relative;border: 1px solid #CCCCCC;line-height: 20px;color: #666;font-size: 12px;margin-bottom: 20px;}
+#Dmain_bottom{position:relative;width: 725px;padding-top: 10px;height: 30px;background: #eee;font-weight: bold;overflow: hidden;}
+#Dmain_bottom img{position: absolute;left: 254px;top:11px;}
+#imggop{margin: 0 auto;}

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pubuliu</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/list02.css">
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../js/ajax.js"></script>
+	<script type="text/javascript" src="../jquery.cookie.js"></script>
+	<script type="text/javascript" src="../shopingcar.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		//右边的fixed
+			$.cookie("goods");
+
+
+		$("#right_but").on("click",function(){
+			$("#right2").css("display","none")
+		})
+	
+		//我的美购下拉菜单
+		$(".one").on("mouseover",function(){
+			$("#header_list").css("display","block")
+		});
+
+		$(".one").on("mouseout",function(){
+			$("#header_list").css("display","none")
+		});
+
+		//fixed
+
+		$("#right_but").on("click",function(){
+			$("#right2").css("display","none")
+		})
+//json 数据
+
+		ajax("get","../index.json","",function(data){
+//这里开始为nav的json下拉菜单
+			var arr = JSON.parse(data)._listData01;
+			var div1 = $("<div></div>")
+			for(var i = 0; i < arr.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr[i].title);
+				div1.append(sa);
+				$("#main").append(div1);
+			};
+
+			var arr2 = JSON.parse(data)._listData02;
+			var div2 = $("<div></div>")
+			for(var i = 0; i < arr2.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr2[i].title);
+				div2.append(sa);
+				$("#main").append(div2);
+			};
+		
+			var arr3 = JSON.parse(data)._listData03;
+			var div3 = $("<div></div>")
+			for(var i = 0; i < arr3.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr3[i].title);
+				div3.append(sa);
+				$("#main").append(div3);
+			};
+
+			var arr4 = JSON.parse(data)._listData04;
+			var div4 = $("<div></div>")
+			for(var i = 0; i < arr4.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr4[i].title);
+				div4.append(sa);
+				$("#main").append(div4);
+			};
+
+			var arr5 = JSON.parse(data)._listData05;
+			var div5 = $("<div></div>")
+			for(var i = 0; i < arr5.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr5[i].title);
+				div5.append(sa);
+				$("#main").append(div5);
+			};
+
+			var arr6 = JSON.parse(data)._listData06;
+			var div6 = $("<div></div>")
+			for(var i = 0; i < arr6.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr6[i].title);
+				div6.append(sa);
+				$("#main").append(div6);
+			};
+
+
+			var arr7 = JSON.parse(data)._listData07;
+			var div7 = $("<div></div>")
+			for(var i = 0; i < arr7.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr7[i].title);
+				div7.append(sa);
+				$("#main").append(div7);
+			};
+
+
+			var arr8 = JSON.parse(data)._listData08;
+			var div8 = $("<div></div>")
+			for(var i = 0; i < arr8.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr8[i].title);
+				div8.append(sa);
+				$("#main").append(div8);
+			};
+
+			var arr9 = JSON.parse(data)._listData09;
+			var div9 = $("<div></div>")
+			for(var i = 0; i < arr9.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr9[i].title);
+				div9.append(sa);
+				$("#main").append(div9);
+			};
+
+			var arr10 = JSON.parse(data)._listData10;
+			var div10 = $("<div></div>")
+			for(var i = 0; i < arr10.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr10[i].title);
+				div10.append(sa);
+				$("#main").append(div10);
+			};
+
+			var arr11 = JSON.parse(data)._listData11;
+			var div11 = $("<div></div>")
+			for(var i = 0; i < arr11.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr11[i].title);
+				div11.append(sa);
+				$("#main").append(div11);
+			};
+
+			var arr12 = JSON.parse(data)._listData12;
+			var div12 = $("<div></div>")
+			for(var i = 0; i < arr12.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr12[i].title);
+				div12.append(sa);
+				$("#main").append(div12);
+			};
+
+			var arr13 = JSON.parse(data)._listData13;
+			var div13 = $("<div></div>")
+			for(var i = 0; i < arr13.length; i++){
+				var sa = $('<a href="#"></a>');
+				sa.html(arr13[i].title);
+				div13.append(sa);
+				$("#main").append(div13);
+			};
+			var arr14 = JSON.parse(data).right_images;
+			for(var i = 0; i < arr14.length; i++){
+				var rightImg = $('<img src=""/>');
+				rightImg.attr("src","../" +arr14[i].imgUrl);
+				$("#right").append(rightImg);
+			}
+			var arr15 = JSON.parse(data).right_images2;
+			for(var i = 0; i < arr15.length; i++){
+				var rightImg = $('<img src=""/>');
+				rightImg.attr("src","../" + arr15[i].imgUrl);
+				$("#right").append(rightImg);
+			}
+			var zdiv = $("<ul class='gulg'></ul>")
+			var arr50 = JSON.parse(data).list2_all;
+			for(var i = 0; i < arr50.length;i++){
+				var ggli = $("<li class='ggli'></li>")
+				var gga = $("<a class='gga' href='#'><img src='"+ arr50[i].images +"'></a>");
+				var ggtitle = $("<a class='ggtitle'>"+ arr50[i].title +"</a>");
+				var ggpric = $("<span class='ggpric'>"+ arr50[i].sale +"</span>");
+				var ggs = $("<s class='ggs'>"+ arr50[i].cost +"</s>");
+				var ggbutton = $('<button class="ggbutton">'+ '立即购买' +'</button>');
+				ggli.append(gga);
+				ggli.append(ggtitle);
+				ggli.append(ggpric);
+				ggli.append(ggs);
+				ggli.append(ggbutton);
+				zdiv.append(ggli);
+			}
+			
+			$("#all_paddyt").append(zdiv);
+
+			})
+//购物车
+		$("#shopping_cart").on("mouseover",function(){
+			$("#shopping").css("display","block")
+		});
+
+		$("#shopping_cart").on("mouseout",function(){
+			$("#shopping").css("display","none")
+		});
+//所有商品下拉菜单
+		$("#allshop").on("mouseover",function(){
+			$("#big_list").css("display","block")
+		});
+		$("#allshop").on("mouseout",function(){
+			$("#big_list").css("display","none")
+		});
+//阻止我的美购，a标签的默认跳转
+	    $("#this_onea").on("click",function(){
+	    	return false;
+	    });
+
+		$("#shopping_cart").on("mouseover",function(){
+			$("#shopping").css("display","block")
+		});
+
+		$("#shopping_cart").on("mouseout",function(){
+			$("#shopping").css("display","none")
+		});
+//所有商品下拉菜单
+		$("#allshop").on("mouseover",function(){
+			$("#big_list").css("display","block")
+		});
+		$("#allshop").on("mouseout",function(){
+			$("#big_list").css("display","none")
+		});
+//阻止我的美购，a标签的默认跳转
+	    $("#this_onea").on("click",function(){
+	    	return false;
+	    });
+
+	});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="wrap">
+			<img id = "top_img" src="../images/index_03.jpg">
+			<p class="header_font">您好，欢迎光临美国购物网！</p>
+			<div class="main"><a href="denglu.html">请登录</a> | <a href = "denglu.html">快速注册</a> | </div>
+			<ul class="right">
+				<li class="one">
+				<div id="hearder_a">
+					<a id="this_onea" href="#">我的美购</a>
+				</div>
+				<div id="header_list">
+					<ul class="header_list01">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的代购单</a></li>
+						<li><a href="#">我的收藏夹</a></li>
+						<li><a href="#">我的代购卷</a></li>
+						<li><a href="#">我的积分</a></li>
+					</ul>
+				</div>
+				</li>
+				
+				<li class="two"><a href="#"><img src="../images/index_07.jpg"/></a>
+				</li>
+				<li class="three"><a href="#">帮助中心</a></li>
+				<li class="four"><a href="#">English</a></li>
+				<li class="five"><a href="#">收藏本站</a></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div id="toper">
+		<div class="wrap">
+			<img id="toper_image01" src="../images/index_r6_c42.jpg"/>
+			<div id="toper_search">
+				<div id="seach">
+					<form action="../php/wpa.php" method="get" name="seach_form">
+						<input  type="text" placeholder="请输入品牌或者商品名称">
+						<button>搜索</button>
+					</form>
+				</div>
+
+				<ul id="hot">
+					<li id="hot_00">热门搜索:</li>
+					<li><a href="#" id="hot_01">百傲钙</a></li>
+					<li><a href="#" id="hot_02">Coach新款</a></li>
+					<li><a href="#">CK</a></li>
+					<li><a href="#">CNG</a></li>
+					<li><a href="#">拉夫劳伦</a></li>
+					<li><a href="#">Michael Kors</a></li>
+				</ul>
+			</div>
+
+			<div id="shopping_cart">
+				<span id="shopping_span">
+					<font id="font_numbero">0</font>
+				</span>
+					<div id="shopping">
+						<p id='shoppingcar_P'>您还没有购买物品，快去挑选吧</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav">
+		<div class="wrap">
+			<div id="nav_list">
+				<div id="allshop">全部商品分类
+				<div id="big_list">
+					<div id="left">
+						<ul id="left_list">
+							<li><a href = "#">服饰</a></li>
+							<li><a href = "#">鞋靴</a></li>
+							<li><a href = "#">箱包</a></li>
+							<li><a href = "#">配饰</a></li>
+							<li><a href = "#">饰品</a></li>
+							<li><a href = "#">手表</a></li>
+							<li><a href = "#">眼镜</a></li>
+							<li><a href = "#">护肤</a></li>
+							<li><a href = "#">香水</a></li>
+							<li><a href = "#">彩妆</a></li>
+							<li><a href = "#">男士护理</a></li>
+							<li><a href = "#">营养保健</a></li>
+							<li><a href = "#">呼吸机及配件</a></li>
+						</ul>
+					</div>
+					<div id="main"></div>
+					<div id="right"></div>
+				</div>
+			</div>
+			</div>
+			<ul id="nav_table">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="#">服装鞋类</a></li>
+				<li><a href="#">箱包配饰</a></li>
+				<li><a href="#">营养保健</a></li>
+				<li><a href="#">三天到货</a></li>
+				<li id="splice"><a href="#"><img src="../images/index3_r4_c7.jpg"/></a></li>
+			</ul>
+			<img id="nav_right" src="../images/right01.jpg"/>
+		</div>
+	</div>
+	<div id="all_center">
+		<div id="xiangqingf_left">
+			<div id="kgrv">
+				<div class="kgrb">商品分类 Categories</div>
+				<ul id="kgrt">
+					<li><a href="#">服装鞋类</a>
+						<ul id="kgrh"> 
+							<li><a href="#">女装</a></li>
+							<li><a href="#">男装</a></li>
+							<li><a href="#">童装</a></li>
+							<li><a href="#">女鞋</a></li>
+							<li><a href="#">男鞋</a></li>
+							<li><a href="#">童鞋</a></li>
+						</ul>
+					</li>
+					<li><a href="#">箱包配饰</a></li>
+					<li><a href="#">美容护肤</a></li>
+					<li><a href="#">茶酒饮品</a></li>
+					<li><a href="#">营养保健</a></li>
+					<li><a href="#">母婴家具</a></li>
+					<li><a href="#">运动户外</a></li>
+				</ul>
+			</div>
+			<div id="slet">
+				<h2 id="slet_tit">
+					<span id="slet_span">折扣推荐</span><span id="slet_span2"><a href="#">更多></a></span>
+				</h2>
+				<ul id="slet_childUL">
+					<li><div class="slet_chlidDiv"><img src="../images/list2/m1.jpg"/></div><a class="slet_childA" href="#">正品代购Uniflora优福巴西绿蜂胶鼻腔喷剂非生理盐水缓解
+					</a><span class="selt_childSPAN">￥189.00</span><s class="selt_childS">￥299.00</s></li>
+					<li><div class="slet_chlidDiv"><img src="../images/list2/m2.jpg"/></div><a class="slet_childA" href="#">正品代购BioCalth百傲钙关节通 90粒 缓解各类关节疼痛</a><span class="selt_childSPAN">￥299.00</span><s class="selt_childS">￥356.00</s></li>
+					<li><div class="slet_chlidDiv"><img src="../images/list2/m3.jpg"/></div><a class="slet_childA" href="#">正品代购 法国Dior 迪奥addict extreme 魅惑超模玩色</a><span class="selt_childSPAN">￥258.62</span><s class="selt_childS">￥499.00</s></li>
+					<li><div class="slet_chlidDiv"><img src="../images/list2/m4.jpg"/></div><a class="slet_childA" href="#">正品代购 韩国直邮Laneige/兰芝双色口红 立体唇膏 宋慧乔</a><span class="selt_childSPAN">￥522.00</span><s class="selt_childS">￥958.00</s></li>
+					<li><div class="slet_chlidDiv"><img src="../images/list2/m5.jpg"/></div><a class="slet_childA" href="#">正品代购New Balance新百伦男士经典款574运动鞋</a><span class="selt_childSPAN">￥219.00</span><s class="selt_childS">￥350.00</s></li>
+					<li><div class="slet_chlidDiv"><img src="../images/list2/m6.jpg"/></div><a class="slet_childA" href="#">正品代购 日本花王LAURIER乐而雅瞬吸透气棉柔F系列卫生巾 </a><span class="selt_childSPAN">￥204.00</span><s class="selt_childS">￥350.00</s></li>
+				</ul>
+			</div>
+		</div>
+		<div id="xiangqingf_right">
+			<div id="xiangqingf_r_top">
+				<h2 id="top_h2">品牌筛选&ensp;&ensp;&ensp;&ensp;<span>Refine</span></h2>
+				<ul id="top_tul">
+					<li><a href="#">全部品牌</a></li>
+					<li><a href="#">CK (Calvin Klein)</a></li>
+					<li><a href="#">李维斯</a></li>
+					<li><a href="#">新百伦</a></li>
+					<li><a href="#">爱步</a></li>
+					<li><a href="#">斯凯奇</a></li>
+					<li><a href="#">哥伦比亚</a></li>
+					<li><a href="#">Melissa</a></li>
+					<li><a href="#">阿迪达斯</a></li>
+					<li><a href="#">彪马</a></li>
+					<li><a href="#">匡威</a></li>
+					<li><a href="#">北面</a></li>
+					<li><a href="#">耐克</a></li>
+					<li><a href="#">Sam Edelman</a></li>
+					<li><a href="#">蔻驰</a></li>
+					<li><a href="#">UGG</a></li>
+					<li><a href="#">Cole Haan</a></li>
+					<li><a href="#">天伯伦</a></li>
+					<li><a href="#">Kate Spade</a></li>
+					<li><a href="#">Dr. Martens</a></li>
+					<li><a href="#">Asos</a></li>
+					<li><a href="#">Stuart Weitzman</a></li>
+					<li><a href="#">迷你唐卡</a></li>
+				</ul>
+			</div>
+			<div id="main_gttitle">
+				<div id="zlg1">综合排序</div>
+				<a href="#">畅销</a>
+				<a href="#">新品</a>
+				<a href="#">价格</a>
+				<a href="#">价格</a>
+				<a href="#">浏览量</a>
+				<a href="#">浏览量</a>
+				<a style="background: none;margin-left: 290px;">当前第<font color="red">1</font>页/共 37 页 </a>
+				<a href="#">上一页</a>
+				<a href="#">下一页</a>
+			</div>
+			<div id="all_paddyt"></div>
+		</div>
+	</div>
+			<div id="list_nav">
+		<div class="wrap">
+			<div id="nav_01"></div>
+			<div id="nav_02">
+				<span class="nav2">帮助中心</span>
+				<span class="nav2">支付方式</span>
+				<span class="nav2">会员机制</span>
+				<span class="nav2">网站地图</span>
+				<span class="nav2">关于我们</span>
+				<span class="nav2">服务中心</span>
+				<span class="nav2">关注我们</span>
+			</div>
+			<div id="nav_03">
+				<ul class="nav3">
+				<li><a href="#">代购流程</a></li>
+				<li><a href="#">配送方式</a></li>
+				<li><a href="#">代金券使用</a></li>
+				<li><a href="#">常见问题</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">支付宝</a></li>
+				<li><a href="#">财付通</a></li>
+				<li><a href="#">银行转账</a></li>
+				<li><a href="#">网银在线</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">会员机制</a></li>
+				<li><a href="#">会员奖励</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">友情链接</a></li>
+				<li><a href="#">折扣播报</a></li>
+				<li><a href="#">潮流资讯</a></li>
+				<li><a href="#">品牌专区</a></li>
+				</ul>
+				<ul class="nav3">
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">隐私声明</a></li>
+				<li><a href="#">企业文化</a></li>
+				</ul>
+				<div id="nav_right1"></div>
+			</div>
+			<div id="nav_04"></div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="wrap">
+			<img src="../images/pai.jpg"/>
+		</div>
+	</div>
+	<div id="right2"><img  src="../images/right.jpg"/><button id="right_but">×</button></div>
+</body>
+</html>

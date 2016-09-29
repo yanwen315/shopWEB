@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/* 公用CSS  */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,.root,.dat{margin:0;padding:0; font-family:"微软雅黑"} 
+a{text-decoration:none;}
+#header,#toper,#nav,#banner,#list_01,#list_02,#list_03,#list_04,#list_05,#list_06,#list_07,#help,#list_nav,#footer{width:100%;}
+.wrap{margin:0 auto;width:1195px;}
+img{ border:0;}
+ul,li{ list-style:none;}
+em,i{ font-style:normal;}
+a:link{color: #8f8e96;}
+a:visited{color: #8f8e96;}
+a:hover{color: #9b151e;}
+a:active{color: #8f8e96;}
